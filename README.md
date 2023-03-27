@@ -7,7 +7,7 @@
 
 <p align="center">
   <a href="https://opencollective.com/done" alt="Financial Contributors on Open Collective"><img src="https://opencollective.com/done/all/badge.svg?label=financial+contributors" /></a> <img src="https://img.shields.io/badge/stability-stable-green.svg" alt="Stability: Stable">
-  <img src="https://img.shields.io/github/release/franciscolourenco/done.svg" alt="Release version">
+  <img src="https://img.shields.io/github/release/smiller171/done.svg" alt="Release version">
   <img src="https://img.shields.io/badge/fish-%3E=2.3.0-orange.svg" alt="fish >=2.3.0">
   <img src="https://img.shields.io/badge/license-MIT-lightgray.svg" alt="License: MIT">
 </p>
@@ -17,18 +17,20 @@ Just go on with your normal life. You will get a notification when a process tak
 
 After installing you could type, for instance `sleep 6`, and start using other app. After 6 seconds you should get a notification.
 
+This is a fork of [franciscolourenco/done](https://github.com/fanciscolourenco/done). I intend to keep it somewhat maintained, but time constraints abound. Pull requests welcome, I'll get to them as soon as I can. If you're interested in helping maintain, let me know in a GH issue or conversation.
+
 ## Installation
 
 #### Using [Fisher](https://github.com/jorgebucaran/fisher)
 
 ```fish
-fisher install franciscolourenco/done
+fisher install smiller171/done
 ```
 
 #### Manually
 
 ```fish
-curl -Lo ~/.config/fish/conf.d/done.fish --create-dirs https://raw.githubusercontent.com/franciscolourenco/done/master/conf.d/done.fish
+curl -Lo ~/.config/fish/conf.d/done.fish --create-dirs https://raw.githubusercontent.com/smiller171/done/master/conf.d/done.fish
 ```
 
 #### Arch Linux
@@ -55,7 +57,7 @@ brew install terminal-notifier
 ## Updating
 
 ```fish
-fisher update franciscolourenco/done
+fisher update smiller171/done
 ```
 
 ## Settings
@@ -118,39 +120,17 @@ set -U __done_expire_time 3000 # 3 seconds
 
 ## Credits
 
-- [Francisco Lourenço](https://github.com/aristidesfl/) - Maintainer
+- [Scott Miller](https://github.com/smiller171) - Fork maintainer
+- [Francisco Lourenço](https://github.com/franciscolourenco/) - Original Maintainer
 - [Daniel Wehner](https://dawehner.github.io/) - Proof of Concept
 - [Thanh Duc Nguyen](http://iamthanh.com/) - Logo
 
 ## Contributors
 
-### Code Contributors
+This is a fork of franciscolourenco/done. I intend to keep it somewhat maintained, but time constraints abound. Pull requests welcome, I'll get to them as soon as I can. If you're interested in helping maintain, let me know in a GH issue or conversation.
 
 This project exists thanks to all the people who contribute. [[Contribute](CONTRIBUTING.md)].
 <a href="https://github.com/franciscolourenco/done/graphs/contributors"><img src="https://opencollective.com/done/contributors.svg?width=890&button=false" /></a>
-
-### Financial Contributors
-
-Become a financial contributor and help us sustain our community. [[Contribute](https://opencollective.com/done/contribute)]
-
-#### Individuals
-
-<a href="https://opencollective.com/done"><img src="https://opencollective.com/done/individuals.svg?width=890"></a>
-
-#### Organizations
-
-Support this project with your organization. Your logo will show up here with a link to your website. [[Contribute](https://opencollective.com/done/contribute)]
-
-<a href="https://opencollective.com/done/organization/0/website"><img src="https://opencollective.com/done/organization/0/avatar.svg"></a>
-<a href="https://opencollective.com/done/organization/1/website"><img src="https://opencollective.com/done/organization/1/avatar.svg"></a>
-<a href="https://opencollective.com/done/organization/2/website"><img src="https://opencollective.com/done/organization/2/avatar.svg"></a>
-<a href="https://opencollective.com/done/organization/3/website"><img src="https://opencollective.com/done/organization/3/avatar.svg"></a>
-<a href="https://opencollective.com/done/organization/4/website"><img src="https://opencollective.com/done/organization/4/avatar.svg"></a>
-<a href="https://opencollective.com/done/organization/5/website"><img src="https://opencollective.com/done/organization/5/avatar.svg"></a>
-<a href="https://opencollective.com/done/organization/6/website"><img src="https://opencollective.com/done/organization/6/avatar.svg"></a>
-<a href="https://opencollective.com/done/organization/7/website"><img src="https://opencollective.com/done/organization/7/avatar.svg"></a>
-<a href="https://opencollective.com/done/organization/8/website"><img src="https://opencollective.com/done/organization/8/avatar.svg"></a>
-<a href="https://opencollective.com/done/organization/9/website"><img src="https://opencollective.com/done/organization/9/avatar.svg"></a>
 
 ## License
 

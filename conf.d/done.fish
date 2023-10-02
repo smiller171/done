@@ -76,9 +76,21 @@ function __done_windows_notification -a title -a message
 "
 end
 
+function __done_lsappinfo
+    # from the lsappinfo man page, ASNs can take several forms:
+    # - "ASN:0xAAAA:0xBBBB:" where AAAA and BBBB are the values for an application ASN.
+    # - "0xBBBB" where BBBB are the values from the lower part of an application ASN for which the upper part of the ASN is 0x0
+    # this function attempts to detect the latter case and put the ASN into the proper form for querying lsappinfo
+    set asn (lsappinfo front)
+    if string match -rgq 'ASN:0x0-(?<short_asn>.*):' $asn
+        set asn '0x'$short_asn
+    end
+    lsappinfo info -only bundleID $asn | cut -d '"' -f4
+end
+
 function __done_get_focused_window_id
     if type -q lsappinfo
-        lsappinfo info -only bundleID (lsappinfo front) | cut -d '"' -f4
+        __done_lsappinfo
     else if test -n "$SWAYSOCK"
         and type -q jq
         swaymsg --quiet --type get_tree | jq '.. | objects | select(.focused == true) | .id'
